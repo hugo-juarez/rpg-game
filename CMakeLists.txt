@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(
   rpgGame
   VERSION 1.0.0
-  LANGUAGES CXX
+  LANGUAGES C CXX
 )
 
 # Defualt build debug if not type was given
@@ -35,4 +35,4 @@ add_executable(
   ${CMAKE_SOURCE_DIR}/src/main.cpp
 )
 
-target_link_libraries(rpgGame SDL3::SDL3)
+target_link_libraries(rpgGame SDL3::SDL3 glad)
