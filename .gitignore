@@ -1,1 +1,3 @@
 build/
+#For NVMI
+compile_commands.json
